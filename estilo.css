@@ -3182,109 +3182,71 @@ footer * {
         padding-right: 14px;
     }
 }
-/* ===== AJUSTE DO TÍTULO PRINCIPAL NO CELULAR ===== */
-
-@media (max-width: 700px) {
-
-    .hero h1 {
-        width: 100% !important;
-        max-width: 360px !important;
-
-        font-size: 43px !important;
-        line-height: 1.12 !important;
-
-        letter-spacing: 2px !important;
-        word-spacing: 8px !important;
-
-        margin: 18px auto 22px !important;
-
-        text-align: center !important;
-    }
-
-}
-@media (max-width: 380px) {
-
-    .hero h1 {
-        max-width: 330px !important;
-        font-size: 39px !important;
-        line-height: 1.12 !important;
-        letter-spacing: 1.5px !important;
-        word-spacing: 6px !important;
-    }
-
-}
-@media (max-width: 700px) {
-
-    /* ACADEMIA SPEED FITNESS — maior */
-    .hero-subtitulo {
-        font-size: 16px !important;
-        letter-spacing: 2px !important;
-        line-height: 1.3 !important;
-        margin-bottom: 15px !important;
-    }
-
-    /* VEM SER SUA MELHOR VERSÃO — menor */
-    .hero h1 {
-        font-size: 38px !important;
-        line-height: 1.08 !important;
-        letter-spacing: 1px !important;
-        margin-top: 5px !important;
-    }
-
-}
 /* ==========================================
-   TROCA DAS FONTES DO TÍTULO PRINCIPAL
-   ========================================== */
+   TÍTULO PRINCIPAL — AJUSTE FINAL
+========================================== */
 
-/* ACADEMIA SPEED FITNESS
-   recebe o estilo que era do título principal */
+/* ACADEMIA SPEED FITNESS */
 .hero-subtitulo {
-    font-family: inherit !important;
-    font-size: 48px !important;
-    font-weight: 900 !important;
-    line-height: 1 !important;
-    letter-spacing: 1px !important;
-    color: #008cff !important;
-    text-transform: uppercase;
+    display: block;
+    color: #008cff;
+    font-size: clamp(42px, 5.5vw, 90px);
+    line-height: 0.92;
+    font-weight: 900;
+    letter-spacing: -4px;
+    margin: 0 0 25px 0;
 }
 
-/* VEM SER SUA MELHOR VERSÃO
-   recebe o estilo mais simples do subtítulo */
+/* VEM SER SUA MELHOR VERSÃO */
 .hero h1 {
-    font-family: inherit !important;
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    line-height: 1.3 !important;
-    letter-spacing: 3px !important;
-    color: #ffffff !important;
-    text-transform: uppercase;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 4px;
 }
 
 .hero h1 span {
-    color: #008cff !important;
-    font-size: inherit !important;
-    font-weight: inherit !important;
+    display: block;
+    color: #008cff;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
 }
 
-/* CELULAR */
+
+/* ==========================================
+   CELULAR
+========================================== */
+
 @media (max-width: 700px) {
 
     .hero-subtitulo {
-        font-size: 32px !important;
-        line-height: 1.05 !important;
-        letter-spacing: 1px !important;
-        max-width: 350px !important;
-        margin: 0 auto 18px !important;
+        width: 100%;
+        max-width: 360px;
+
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: -1px;
+
+        margin: 0 auto 18px;
+        text-align: center;
     }
 
     .hero h1 {
-        font-size: 18px !important;
-        line-height: 1.35 !important;
-        letter-spacing: 2px !important;
-        margin: 0 auto 20px !important;
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.6;
+        letter-spacing: 2px;
+
+        margin: 0 auto 20px;
+        text-align: center;
     }
 
     .hero h1 span {
-        font-size: inherit !important;
+        letter-spacing: 2px;
     }
 }
