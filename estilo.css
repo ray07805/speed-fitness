@@ -3250,3 +3250,22 @@ footer * {
         letter-spacing: 2px;
     }
 }
+.hero-subtitulo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: #05070b;
+
+    font-size: clamp(55px, 5.5vw, 90px);
+    line-height: 0.92;
+
+    font-weight: 900;
+    letter-spacing: -4px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 3px #008cff,
+        0 0 8px #008cff,
+        0 0 18px rgba(0, 140, 255, 0.8);
+}
