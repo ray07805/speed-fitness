@@ -3650,3 +3650,757 @@ section h2 span {
         margin-top: 30px;
     }
 }
+/* =====================================================
+   CORREÇÃO FINAL — CELULAR SPEED FITNESS
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* ---------- CONFIGURAÇÃO GERAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    /* ---------- CABEÇALHO ---------- */
+
+    .cabecalho {
+        width: 100%;
+        min-height: 75px;
+        height: auto;
+
+        padding: 10px 18px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 8px;
+    }
+
+    .logo {
+        width: 75px;
+        height: 55px;
+
+        flex-shrink: 0;
+    }
+
+    /* ---------- MENU ---------- */
+
+    .menu {
+        order: 3;
+
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 12px 18px;
+
+        padding: 8px 0 5px;
+
+        overflow: visible;
+    }
+
+    .menu a {
+        font-size: 9px;
+        white-space: nowrap;
+
+        padding: 4px 0;
+    }
+
+    .menu a::after {
+        bottom: -3px;
+    }
+
+    .botao-menu {
+        padding: 10px 13px;
+
+        font-size: 8px;
+
+        white-space: nowrap;
+
+        flex-shrink: 0;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+
+        padding: 65px 20px 50px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 20px;
+
+        overflow: hidden;
+    }
+
+    .hero-conteudo {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-subtitulo {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+
+        margin-bottom: 16px;
+    }
+
+    .hero h1 {
+        width: 100%;
+
+        font-size: clamp(38px, 12vw, 58px);
+
+        line-height: 0.95;
+
+        letter-spacing: -2px;
+
+        word-break: normal;
+    }
+
+    .hero h1 span {
+        -webkit-text-stroke: 1.5px #008cff;
+    }
+
+    .hero p {
+        width: 100%;
+        max-width: 400px;
+
+        margin: 25px auto;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    /* ---------- BOTÕES DO HERO ---------- */
+
+    .hero-botoes {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .hero-botoes a,
+    .botao-principal,
+    .botao-secundario {
+        width: 100%;
+        max-width: 320px;
+
+        min-height: 48px;
+
+        padding: 12px 18px;
+
+        font-size: 10px;
+
+        white-space: normal;
+
+        text-align: center;
+    }
+
+
+    /* ---------- VISUAL DO HALTER ---------- */
+
+    .hero-visual {
+        width: 100%;
+        max-width: 390px;
+
+        height: 320px;
+
+        margin: 10px auto 0;
+
+        position: relative;
+
+        transform: scale(0.78);
+
+        transform-origin: center center;
+    }
+
+    .circulo-brilho {
+        width: 330px;
+        height: 330px;
+    }
+
+    .halter {
+        width: 390px;
+        height: 170px;
+
+        left: 50%;
+        top: 45%;
+
+        transform: translate(-50%, -50%) rotate(-12deg);
+    }
+
+    .peso-texto {
+        right: 0;
+        bottom: 20px;
+
+        font-size: 10px;
+    }
+
+    .peso-texto strong {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .peso-texto span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .linha-1 {
+        right: 0;
+        top: 70px;
+
+        width: 120px;
+    }
+
+    .linha-2 {
+        left: 0;
+        bottom: 70px;
+
+        width: 120px;
+    }
+
+
+    /* =================================================
+       SEÇÕES
+    ================================================= */
+
+    section {
+        width: 100%;
+
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: clamp(30px, 10vw, 45px);
+
+        letter-spacing: -1.5px;
+
+        line-height: 1;
+    }
+
+
+    /* =================================================
+       BENEFÍCIOS
+    ================================================= */
+
+    .beneficios {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 35px;
+    }
+
+    .beneficio {
+        width: 100%;
+
+        padding: 28px 22px;
+    }
+
+
+    /* =================================================
+       DIFERENCIAIS
+    ================================================= */
+
+    .diferenciais {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 35px;
+    }
+
+    .diferencial {
+        width: 100%;
+
+        padding: 25px 20px;
+    }
+
+
+    /* =================================================
+       PLANOS
+    ================================================= */
+
+    .planos-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .plano-card {
+        width: 100%;
+
+        padding: 28px 22px;
+    }
+
+    .preco {
+        font-size: 32px;
+    }
+
+
+    /* =================================================
+       AULA EXPERIMENTAL
+    ================================================= */
+
+    .experimental-destaque {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .passo {
+        width: 100%;
+
+        padding: 28px 22px;
+    }
+
+
+    /* =================================================
+       EVOLUÇÃO
+    ================================================= */
+
+    .evolucao {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 70px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+        overflow: hidden;
+    }
+
+    .evolucao-texto {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .evolucao-texto h2 {
+        font-size: clamp(35px, 10vw, 50px);
+
+        letter-spacing: -1px;
+    }
+
+    .evolucao-texto p {
+        width: 100%;
+        max-width: 400px;
+
+        margin: 0 auto;
+
+        font-size: 13px;
+    }
+
+    .estatisticas {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        margin-top: 30px;
+    }
+
+    .estatistica {
+        width: 95px;
+        height: 95px;
+
+        padding-left: 12px;
+
+        text-align: left;
+    }
+
+    .estatistica strong {
+        font-size: 24px;
+    }
+
+    .estatistica span {
+        font-size: 8px;
+    }
+
+    .evolucao-visual {
+        width: 100%;
+        max-width: 390px;
+
+        height: 350px;
+
+        margin-top: 20px;
+
+        transform: scale(0.75);
+        transform-origin: center center;
+    }
+
+    .energia {
+        width: 300px;
+        height: 300px;
+    }
+
+    .anel-1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .anel-2 {
+        width: 330px;
+        height: 330px;
+    }
+
+    .anel-3 {
+        width: 390px;
+        height: 390px;
+    }
+
+    .linha-evolucao {
+        width: 190px;
+
+        right: 10px;
+        bottom: 35px;
+    }
+
+
+    /* =================================================
+       CADASTRO / FORMULÁRIO
+    ================================================= */
+
+    .cadastro-area {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .cadastro-informacoes {
+        width: 100%;
+
+        position: static;
+    }
+
+    .formulario-container {
+        width: 100%;
+
+        padding: 25px 18px;
+
+        border-radius: 12px;
+    }
+
+    .formulario-titulo {
+        gap: 10px;
+    }
+
+    .formulario-titulo h2 {
+        font-size: 19px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        width: 100%;
+
+        font-size: 13px;
+    }
+
+
+    /* =================================================
+       FAMÍLIA
+    ================================================= */
+
+    .cadastro-familia {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .cadastro-familia > div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* =================================================
+       HORÁRIOS
+    ================================================= */
+
+    .horarios {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .tabela-horarios {
+        width: 100%;
+    }
+
+    .horario-linha {
+        width: 100%;
+
+        padding: 18px 16px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 7px;
+    }
+
+    .horario-linha span {
+        text-align: left;
+    }
+
+
+    /* =================================================
+       CONTATO
+    ================================================= */
+
+    .contato-area {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .contato-card {
+        width: 100%;
+
+        padding: 28px 22px;
+
+        overflow-wrap: anywhere;
+    }
+
+    .contato-card h3 {
+        font-size: 17px;
+    }
+
+
+    /* =================================================
+       FAQ
+    ================================================= */
+
+    .faq {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .faq summary {
+        padding: 20px 0;
+
+        font-size: 12px;
+
+        gap: 15px;
+    }
+
+    .faq details p {
+        padding: 0 0 20px;
+
+        font-size: 11px;
+    }
+
+
+    /* =================================================
+       CHAMADA FINAL
+    ================================================= */
+
+    .chamada-final {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 25px;
+
+        padding: 60px 20px;
+    }
+
+    .chamada-final h2 {
+        width: 100%;
+    }
+
+    .chamada-final .botao-principal {
+        width: 100%;
+        max-width: 320px;
+    }
+
+
+    /* =================================================
+       PRIVACIDADE
+    ================================================= */
+
+    .privacidade {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        padding: 22px;
+    }
+
+
+    /* =================================================
+       TOPO DAS PÁGINAS
+    ================================================= */
+
+    .pagina-topo {
+        width: 100%;
+
+        min-height: 300px;
+
+        padding: 60px 20px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .pagina-topo h1 {
+        width: 100%;
+
+        font-size: clamp(38px, 11vw, 58px);
+
+        letter-spacing: -2px;
+
+        word-break: normal;
+    }
+
+    .pagina-topo > p:last-child {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* =================================================
+       RODAPÉ
+    ================================================= */
+
+    .rodape {
+        width: 100%;
+
+        padding: 45px 20px 25px;
+    }
+
+    .rodape-links {
+        gap: 15px;
+
+        padding: 0 10px;
+    }
+
+    .rodape-links a {
+        font-size: 9px;
+    }
+}
+
+
+/* =====================================================
+   CELULARES MUITO PEQUENOS
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .cabecalho {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu {
+        gap: 10px 13px;
+    }
+
+    .menu a {
+        font-size: 8px;
+    }
+
+    .botao-menu {
+        padding: 9px 10px;
+        font-size: 7px;
+    }
+
+    .hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero-visual {
+        transform: scale(0.68);
+    }
+
+    .evolucao-visual {
+        transform: scale(0.65);
+    }
+
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
