@@ -3269,3 +3269,12 @@ footer * {
         0 0 8px #008cff,
         0 0 18px rgba(0, 140, 255, 0.8);
 }
+.hero .hero-conteudo .hero-subtitulo {
+    color: #05070b !important;
+
+    -webkit-text-stroke: 1px #008cff !important;
+
+    text-shadow:
+        0 0 5px rgba(0, 140, 255, 0.8),
+        0 0 12px rgba(0, 140, 255, 0.5) !important;
+}
