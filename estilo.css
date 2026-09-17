@@ -3232,3 +3232,59 @@ footer * {
     }
 
 }
+/* ==========================================
+   TROCA DAS FONTES DO TÍTULO PRINCIPAL
+   ========================================== */
+
+/* ACADEMIA SPEED FITNESS
+   recebe o estilo que era do título principal */
+.hero-subtitulo {
+    font-family: inherit !important;
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    letter-spacing: 1px !important;
+    color: #008cff !important;
+    text-transform: uppercase;
+}
+
+/* VEM SER SUA MELHOR VERSÃO
+   recebe o estilo mais simples do subtítulo */
+.hero h1 {
+    font-family: inherit !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    letter-spacing: 3px !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    color: #008cff !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+
+    .hero-subtitulo {
+        font-size: 32px !important;
+        line-height: 1.05 !important;
+        letter-spacing: 1px !important;
+        max-width: 350px !important;
+        margin: 0 auto 18px !important;
+    }
+
+    .hero h1 {
+        font-size: 18px !important;
+        line-height: 1.35 !important;
+        letter-spacing: 2px !important;
+        margin: 0 auto 20px !important;
+    }
+
+    .hero h1 span {
+        font-size: inherit !important;
+    }
+}
