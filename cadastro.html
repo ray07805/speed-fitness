@@ -1,0 +1,766 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro | Speed Fitness</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <header class="cabecalho">
+
+
+        <div class="logo">
+
+            <span>SPEED</span>
+
+            <small>FITNESS</small>
+
+        </div>
+
+
+        <nav class="menu">
+
+
+            <a href="index.html">
+                Início
+            </a>
+
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+
+            <a href="planos.html">
+                Planos
+            </a>
+
+
+            <a href="experimental.html">
+                Aula Experimental
+            </a>
+
+
+            <a href="cadastro.html" class="ativo">
+                Cadastro
+            </a>
+
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+
+        </nav>
+
+
+        <a href="cadastro.html" class="botao-menu">
+
+            COMEÇAR
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             TOPO
+        ========================== -->
+
+        <section class="pagina-topo">
+
+
+            <p class="subtitulo">
+
+                SPEED FITNESS
+
+            </p>
+
+
+            <h1>
+
+                FAÇA SEU
+
+                <span>CADASTRO.</span>
+
+            </h1>
+
+
+            <p>
+
+                Preencha seus dados e dê o primeiro passo
+                para começar a treinar na Speed Fitness.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             ÁREA DO CADASTRO
+        ========================== -->
+
+        <section class="cadastro-area">
+
+
+            <div class="cadastro-informacoes">
+
+
+                <p class="subtitulo">
+
+                    VEM PRA SPEED
+
+                </p>
+
+
+                <h2>
+
+                    SEU OBJETIVO
+
+                    <span>COMEÇA AQUI.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Preencha o formulário ao lado com seus
+                    dados. Depois, suas informações serão
+                    organizadas e enviadas para a equipe
+                    da Speed pelo WhatsApp.
+
+                </p>
+
+
+                <div class="cadastro-beneficios">
+
+
+                    <div>
+
+                        <span>✓</span>
+
+                        <p>
+
+                            Cadastro rápido e simples
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>✓</span>
+
+                        <p>
+
+                            Escolha seu plano
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>✓</span>
+
+                        <p>
+
+                            Envio das informações pelo WhatsApp
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>✓</span>
+
+                        <p>
+
+                            Atendimento da equipe Speed
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 FORMULÁRIO
+            ========================== -->
+
+            <div class="formulario-container">
+
+
+                <form id="formCadastro">
+
+
+                    <div class="formulario-titulo">
+
+                        <span>
+
+                            01
+
+                        </span>
+
+                        <div>
+
+                            <p>
+
+                                CADASTRO DE ALUNO
+
+                            </p>
+
+                            <h2>
+
+                                SEUS DADOS
+
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- NOME -->
+
+                    <div class="campo">
+
+                        <label for="nome">
+
+                            Nome completo
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- CPF -->
+
+                    <div class="campo">
+
+                        <label for="numero">
+
+                            CPF / Número
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="numero"
+                            name="numero"
+                            placeholder="Digite seu CPF"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- SEXO -->
+
+                    <div class="campo">
+
+                        <label for="sexo">
+
+                            Sexo
+
+                        </label>
+
+                        <select
+                            id="sexo"
+                            name="sexo"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Feminino">
+                                Feminino
+                            </option>
+
+                            <option value="Masculino">
+                                Masculino
+                            </option>
+
+                            <option value="Outro">
+                                Outro
+                            </option>
+
+                            <option value="Prefiro não informar">
+                                Prefiro não informar
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- TELEFONE -->
+
+                    <div class="campo">
+
+                        <label for="telefone">
+
+                            Telefone / WhatsApp
+
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(18) 99999-9999"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- DATA DE NASCIMENTO -->
+
+                    <div class="campo">
+
+                        <label for="nascimento">
+
+                            Data de nascimento
+
+                        </label>
+
+                        <input
+                            type="date"
+                            id="nascimento"
+                            name="nascimento"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PLANO -->
+
+                    <div class="campo">
+
+                        <label for="plano">
+
+                            Escolha seu plano
+
+                        </label>
+
+                        <select
+                            id="plano"
+                            name="plano"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione seu plano
+                            </option>
+
+                            <option value="Mensal - R$ 89,97/mês">
+                                Mensal — R$ 89,97/mês
+                            </option>
+
+                            <option value="Trimestral - R$ 255,00">
+                                Trimestral — R$ 255,00
+                            </option>
+
+                            <option value="Semestral - R$ 480,00">
+                                Semestral — R$ 480,00
+                            </option>
+
+                            <option value="Diária - R$ 20,00">
+                                Diária — R$ 20,00
+                            </option>
+
+                            <option value="15 dias - R$ 67,00">
+                                15 dias — R$ 67,00
+                            </option>
+
+                            <option value="3x por semana - R$ 80,00">
+                                3× por semana — R$ 80,00
+                            </option>
+
+                            <option value="Plano Família">
+                                Plano Família
+                            </option>
+
+                            <option value="Aula Experimental Gratuita">
+                                Aula Experimental Gratuita
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- QUANTIDADE FAMÍLIA -->
+
+                    <div
+                        class="campo campo-familia"
+                        id="campoFamilia"
+                        style="display: none;"
+                    >
+
+                        <label for="quantidadeFamilia">
+
+                            Quantidade de pessoas
+
+                        </label>
+
+                        <select
+                            id="quantidadeFamilia"
+                            name="quantidadeFamilia"
+                        >
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="2 pessoas - R$ 170,00">
+                                2 pessoas — R$ 170,00
+                            </option>
+
+                            <option value="3 pessoas - R$ 255,00">
+                                3 pessoas — R$ 255,00
+                            </option>
+
+                            <option value="4 pessoas - R$ 340,00">
+                                4 pessoas — R$ 340,00
+                            </option>
+
+                            <option value="5 pessoas - R$ 425,00">
+                                5 pessoas — R$ 425,00
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- PAGAMENTO -->
+
+                    <div class="campo">
+
+                      <label for="pagamento">Forma de pagamento</label>
+
+<select id="pagamento" name="pagamento" required>
+
+    <option value="">
+        Selecione uma opção
+    </option>
+
+    <option value="Pix">
+        Pix
+    </option>
+
+    <option value="Cartão de crédito">
+        Cartão de crédito
+    </option>
+
+    <option value="Cartão de débito">
+        Cartão de débito
+    </option>
+
+    <option value="Dinheiro">
+        Dinheiro
+    </option>
+
+    <option value="Aula Experimental Gratuita">
+        Aula Experimental Gratuita
+    </option>
+
+</select>
+
+                    </div>
+
+
+
+                    <!-- OBSERVAÇÕES -->
+
+                    <div class="campo">
+
+                        <label for="observacoes">
+
+                            Observações
+
+                        </label>
+
+                        <textarea
+                            id="observacoes"
+                            name="observacoes"
+                            rows="4"
+                            placeholder="Alguma informação que gostaria de enviar para a equipe?"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- AVISO -->
+
+                    <div class="aviso-cadastro">
+
+                        <span>🔒</span>
+
+                        <p>
+
+                            Seus dados serão utilizados apenas
+                            para o atendimento e cadastro na
+                            Speed Fitness.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        type="submit"
+                        class="botao-enviar"
+                    >
+
+                        ENVIAR CADASTRO PELO WHATSAPP
+
+                        <span>→</span>
+
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             PLANO FAMÍLIA
+        ========================== -->
+
+        <section class="cadastro-familia">
+
+
+            <div>
+
+
+                <p class="subtitulo">
+
+                    ESCOLHEU O PLANO FAMÍLIA?
+
+                </p>
+
+
+                <h2>
+
+                    TREINEM JUNTOS.
+
+                    <span>EVOLUAM JUNTOS.</span>
+
+                </h2>
+
+
+                <p>
+
+                    O Plano Família é contratado de forma
+                    conjunta, com um responsável pelo pagamento
+                    e os demais como dependentes.
+
+                </p>
+
+
+            </div>
+
+
+            <a
+                href="planos.html"
+                class="botao-secundario"
+            >
+
+                VER REGRAS DO PLANO
+
+            </a>
+
+
+        </section>
+        <!-- =========================
+             CHAMADA FINAL
+        ========================== -->
+
+        <section class="chamada-final">
+
+
+            <div>
+
+                <p>
+
+                    NÃO DEIXE PARA DEPOIS.
+
+                </p>
+
+
+                <h2>
+
+                    VEM SER SUA
+
+                    <span>MELHOR VERSÃO!</span>
+
+                </h2>
+
+            </div>
+
+
+            <a
+                href="experimental.html"
+                class="botao-principal"
+            >
+
+                CONHECER A SPEED
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="rodape">
+
+
+        <div class="logo">
+
+            <span>SPEED</span>
+
+            <small>FITNESS</small>
+
+        </div>
+
+
+        <p>
+
+            Vem ser sua melhor versão!
+
+        </p>
+
+
+        <div class="rodape-links">
+
+
+            <a href="index.html">
+                Início
+            </a>
+
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+
+            <a href="planos.html">
+                Planos
+            </a>
+
+
+            <a href="experimental.html">
+                Aula Experimental
+            </a>
+
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+
+        </div>
+
+
+        <p class="copyright">
+
+            © 2026 Speed Fitness.
+            Todos os direitos reservados.
+
+        </p>
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+```
