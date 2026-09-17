@@ -3182,3 +3182,9 @@ footer * {
         padding-right: 14px;
     }
 }
+@media (max-width: 700px) {
+    .hero h1 {
+        letter-spacing: 2px;
+        line-height: 1.05;
+    }
+}
