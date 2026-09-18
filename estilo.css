@@ -2905,4 +2905,46 @@ section h2 span {
         padding-right: 14px;
     }
 }
+/* =========================================
+   AJUSTE DO TÍTULO - SOMENTE CELULAR
+========================================= */
 
+@media (max-width: 700px) {
+
+    /* ACADEMIA SPEED FITNESS */
+    .hero .hero-conteudo .hero-subtitulo {
+        color: #008cff !important;
+
+        font-size: 32px !important;
+        line-height: 0.95 !important;
+
+        letter-spacing: -1px !important;
+        font-weight: 900 !important;
+
+        -webkit-text-stroke: 0 !important;
+        text-shadow:
+            0 0 5px rgba(0, 140, 255, 0.8),
+            0 0 12px rgba(0, 140, 255, 0.5) !important;
+
+        text-align: center;
+    }
+
+    /* VEM SER SUA MELHOR VERSÃO */
+    .hero .hero-conteudo h1 {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+
+        letter-spacing: 3px !important;
+
+        text-align: center;
+    }
+
+    .hero .hero-conteudo h1 span {
+        display: inline !important;
+        color: #008cff !important;
+
+        text-shadow:
+            0 0 8px rgba(0, 140, 255, 0.4);
+    }
+
+}
