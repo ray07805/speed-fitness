@@ -2906,14 +2906,14 @@ section h2 span {
     }
 }
 /* =========================================
-   TÍTULO DO INÍCIO — CELULAR
+   TÍTULO DO INÍCIO - CELULAR
 ========================================= */
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
 
     .hero .hero-conteudo .hero-subtitulo {
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 340px !important;
 
         margin: 0 auto 24px !important;
 
@@ -2926,7 +2926,6 @@ section h2 span {
         text-align: center !important;
         text-transform: uppercase !important;
 
-        /* mantém o estilo do PC */
         color: #05070b !important;
         -webkit-text-fill-color: #05070b !important;
         -webkit-text-stroke: 1px #008cff !important;
@@ -2944,8 +2943,8 @@ section h2 span {
 
         font-size: 15px !important;
         line-height: 1.45 !important;
-
         letter-spacing: 3px !important;
+
         text-align: center !important;
     }
 
@@ -2953,10 +2952,10 @@ section h2 span {
         display: inline !important;
 
         color: #008cff !important;
+
         -webkit-text-stroke: 0 !important;
 
         text-shadow:
             0 0 8px rgba(0, 140, 255, 0.5) !important;
     }
-
 }
