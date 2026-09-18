@@ -2906,45 +2906,57 @@ section h2 span {
     }
 }
 /* =========================================
-   AJUSTE DO TÍTULO - SOMENTE CELULAR
+   TÍTULO DO INÍCIO — CELULAR
 ========================================= */
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-    /* ACADEMIA SPEED FITNESS */
     .hero .hero-conteudo .hero-subtitulo {
-        color: #008cff !important;
+        width: 100% !important;
+        max-width: 100% !important;
 
-        font-size: 32px !important;
+        margin: 0 auto 24px !important;
+
+        font-size: clamp(28px, 9vw, 36px) !important;
         line-height: 0.95 !important;
 
-        letter-spacing: -1px !important;
         font-weight: 900 !important;
+        letter-spacing: -1.5px !important;
 
-        -webkit-text-stroke: 0 !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+
+        /* mantém o estilo do PC */
+        color: #05070b !important;
+        -webkit-text-fill-color: #05070b !important;
+        -webkit-text-stroke: 1px #008cff !important;
+
         text-shadow:
-            0 0 5px rgba(0, 140, 255, 0.8),
-            0 0 12px rgba(0, 140, 255, 0.5) !important;
-
-        text-align: center;
+            0 0 4px rgba(0, 140, 255, 0.95),
+            0 0 10px rgba(0, 140, 255, 0.65),
+            0 0 18px rgba(0, 140, 255, 0.35) !important;
     }
 
-    /* VEM SER SUA MELHOR VERSÃO */
     .hero .hero-conteudo h1 {
-        font-size: 16px !important;
-        line-height: 1.5 !important;
+        width: 100% !important;
+
+        margin: 0 auto 20px !important;
+
+        font-size: 15px !important;
+        line-height: 1.45 !important;
 
         letter-spacing: 3px !important;
-
-        text-align: center;
+        text-align: center !important;
     }
 
     .hero .hero-conteudo h1 span {
         display: inline !important;
+
         color: #008cff !important;
+        -webkit-text-stroke: 0 !important;
 
         text-shadow:
-            0 0 8px rgba(0, 140, 255, 0.4);
+            0 0 8px rgba(0, 140, 255, 0.5) !important;
     }
 
 }
