@@ -2985,3 +2985,9 @@ section h2 span {
         font-style: normal !important;
     }
 }
+@media (max-width: 700px) {
+    .hero-subtitulo {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 900 !important;
+    }
+}
