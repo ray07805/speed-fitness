@@ -2985,10 +2985,3 @@ section h2 span {
         font-style: normal !important;
     }
 }
-.hero-subtitulo {
-    font-size: clamp(48px, 5.5vw, 88px);
-    line-height: 0.9;
-    font-weight: 900;
-    letter-spacing: -4px;
-    text-transform: uppercase;
-}
