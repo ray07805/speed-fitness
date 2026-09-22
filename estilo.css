@@ -2985,3 +2985,8 @@ section h2 span {
         font-style: normal !important;
     }
 }
+@media (max-width: 700px) {
+    .hero .hero-conteudo .hero-subtitulo {
+        font-family: 'Bebas Neue', sans-serif !important;
+    }
+}
