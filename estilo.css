@@ -2959,3 +2959,29 @@ section h2 span {
             0 0 8px rgba(0, 140, 255, 0.5) !important;
     }
 }
+/* =====================================================
+   CORREÇÃO DA FONTE DO TÍTULO NO CELULAR
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .hero .hero-conteudo .hero-subtitulo {
+        font-family: 'Montserrat', Arial, sans-serif !important;
+        font-style: normal !important;
+        font-weight: 900 !important;
+
+        letter-spacing: -1.5px !important;
+        line-height: 0.95 !important;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .hero .hero-conteudo h1,
+    .hero .hero-conteudo h1 span,
+    .hero .hero-conteudo p,
+    .hero .hero-conteudo a {
+        font-family: 'Montserrat', Arial, sans-serif !important;
+        font-style: normal !important;
+    }
+}
