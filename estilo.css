@@ -2991,3 +2991,64 @@ section h2 span {
         font-family: 'Anton', sans-serif !important;
     }
 }
+/* =====================================================
+   AJUSTE DAS PÁGINAS INTERNAS
+   SOMENTE POSICIONAMENTO E TAMANHO NO CELULAR
+===================================================== */
+
+
+/* =========================
+   COMPUTADOR
+========================= */
+
+@media (min-width: 701px) {
+
+    .pagina-topo {
+        padding-left: 12% !important;
+        padding-right: 12% !important;
+    }
+
+    .sobre-conteudo,
+    .planos-grid,
+    .cadastro-area,
+    .contato-area,
+    .experimental-destaque,
+    .faq,
+    .chamada-final {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    /* Títulos das páginas internas */
+    .pagina-topo h1 {
+        font-size: clamp(32px, 8vw, 48px) !important;
+        line-height: 1.05 !important;
+    }
+
+    /* Títulos das seções */
+    section h2 {
+        font-size: clamp(26px, 7vw, 38px) !important;
+        line-height: 1.1 !important;
+    }
+
+    /* Textos */
+    .pagina-topo > p:last-child,
+    .sobre-conteudo p,
+    .plano-card p,
+    .diferencial p,
+    .contato-card > p:not(.contato-label),
+    .faq details p {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+    }
+
+}
