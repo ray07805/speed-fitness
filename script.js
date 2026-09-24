@@ -633,3 +633,376 @@ elementos.forEach(function (elemento) {
     observador.observe(elemento);
 
 });
+/* =====================================================
+   SPEED FITNESS — ANIMAÇÕES VISUAIS EXTRAS
+   Não altera o halter do Início.
+   Adiciona elementos diferentes inspirados em academia.
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =================================================
+       1. ANIMAÇÃO DOS ELEMENTOS AO ENTRAREM NA TELA
+    ================================================= */
+
+    const elementosVisuais = document.querySelectorAll(
+        ".evolucao, .beneficio, .diferencial, .plano-card, " +
+        ".cadastro-area, .experimental-destaque, .contato-card, " +
+        ".chamada-final, .faq details"
+    );
+
+    if (elementosVisuais.length) {
+
+        const observadorVisual = new IntersectionObserver(
+            function (entradas) {
+
+                entradas.forEach(function (entrada) {
+
+                    if (entrada.isIntersecting) {
+
+                        entrada.target.classList.add(
+                            "animacao-visivel"
+                        );
+
+                        observadorVisual.unobserve(
+                            entrada.target
+                        );
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+        elementosVisuais.forEach(function (elemento, indice) {
+
+            elemento.style.setProperty(
+                "--atraso-animacao",
+                Math.min(indice * 70, 420) + "ms"
+            );
+
+            observadorVisual.observe(elemento);
+
+        });
+
+    }
+
+
+    /* =================================================
+       2. MOVIMENTO SUTIL DOS CARDS COM O MOUSE
+    ================================================= */
+
+    const cards = document.querySelectorAll(
+        ".beneficio, .diferencial, .plano-card, .contato-card"
+    );
+
+    cards.forEach(function (card) {
+
+        card.addEventListener(
+            "pointermove",
+            function (event) {
+
+                const rect =
+                    card.getBoundingClientRect();
+
+                const x =
+                    ((event.clientX - rect.left) /
+                    rect.width) * 100;
+
+                const y =
+                    ((event.clientY - rect.top) /
+                    rect.height) * 100;
+
+                card.style.setProperty(
+                    "--mouse-x",
+                    x + "%"
+                );
+
+                card.style.setProperty(
+                    "--mouse-y",
+                    y + "%"
+                );
+
+            }
+        );
+
+
+        card.addEventListener(
+            "pointerleave",
+            function () {
+
+                card.style.removeProperty(
+                    "--mouse-x"
+                );
+
+                card.style.removeProperty(
+                    "--mouse-y"
+                );
+
+            }
+        );
+
+    });
+
+
+    /* =================================================
+       3. ELEMENTOS DECORATIVOS DIFERENTES
+          PARA CADA PARTE DA ACADEMIA
+    ================================================= */
+
+    const decoracoes = [
+
+        /* Evolução — linhas de movimento */
+        [
+            ".evolucao",
+            "decoracao-corrida",
+            3
+        ],
+
+        /* Benefícios — detalhes de treino */
+        [
+            ".beneficios, .diferenciais",
+            "decoracao-treino",
+            4
+        ],
+
+        /* Planos — discos/anilhas */
+        [
+            ".planos",
+            "decoracao-anilha",
+            3
+        ],
+
+        /* Cadastro — ficha/painel */
+        [
+            ".cadastro",
+            "decoracao-ficha",
+            3
+        ],
+
+        /* Pagamento — cartão */
+        [
+            ".pagamento",
+            "decoracao-cartao",
+            2
+        ],
+
+        /* Aula experimental — alvo */
+        [
+            ".experimental",
+            "decoracao-alvo",
+            3
+        ],
+
+        /* Horários — tempo */
+        [
+            ".horarios",
+            "decoracao-tempo",
+            3
+        ],
+
+        /* Contato — conexões */
+        [
+            ".contato",
+            "decoracao-conexao",
+            3
+        ],
+
+        /* Final — energia */
+        [
+            ".chamada-final",
+            "decoracao-energia",
+            5
+        ]
+
+    ];
+
+
+    decoracoes.forEach(function (item) {
+
+        const secoes =
+            document.querySelectorAll(item[0]);
+
+
+        secoes.forEach(function (secao) {
+
+            /* Evita criar duas vezes */
+
+            if (
+                secao.querySelector(
+                    ".decoracao-academia"
+                )
+            ) {
+                return;
+            }
+
+
+            const grupo =
+                document.createElement("div");
+
+
+            grupo.className =
+                "decoracao-academia " +
+                item[1];
+
+
+            grupo.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+
+            /* Cria os pequenos elementos */
+
+            for (
+                let i = 0;
+                i < item[2];
+                i++
+            ) {
+
+                const detalhe =
+                    document.createElement("span");
+
+
+                detalhe.className =
+                    "detalhe-academia " +
+                    "detalhe-" +
+                    (i + 1);
+
+
+                grupo.appendChild(
+                    detalhe
+                );
+
+            }
+
+
+            secao.appendChild(
+                grupo
+            );
+
+        });
+
+    });
+
+
+    /* =================================================
+       4. MOVIMENTO DOS ELEMENTOS CONFORME O SCROLL
+    ================================================= */
+
+    const decoracoesCriadas =
+        document.querySelectorAll(
+            ".decoracao-academia"
+        );
+
+
+    let scrollAgendado = false;
+
+
+    function atualizarMovimento() {
+
+        const alturaTela =
+            window.innerHeight;
+
+
+        decoracoesCriadas.forEach(
+            function (decoracao) {
+
+                const rect =
+                    decoracao.getBoundingClientRect();
+
+
+                if (
+                    rect.bottom < -100 ||
+                    rect.top >
+                    alturaTela + 100
+                ) {
+                    return;
+                }
+
+
+                const centro =
+                    rect.top +
+                    rect.height / 2;
+
+
+                const deslocamento =
+                    (
+                        alturaTela / 2 -
+                        centro
+                    ) * 0.025;
+
+
+                decoracao.style.setProperty(
+                    "--scroll-movimento",
+                    deslocamento + "px"
+                );
+
+            }
+        );
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        function () {
+
+            if (scrollAgendado) {
+                return;
+            }
+
+
+            scrollAgendado = true;
+
+
+            requestAnimationFrame(
+                function () {
+
+                    atualizarMovimento();
+
+                    scrollAgendado = false;
+
+                }
+            );
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    atualizarMovimento();
+
+
+    /* =================================================
+       5. FAQ
+    ================================================= */
+
+    const perguntas =
+        document.querySelectorAll(
+            ".faq details"
+        );
+
+
+    perguntas.forEach(function (item) {
+
+        item.addEventListener(
+            "toggle",
+            function () {
+
+                item.classList.toggle(
+                    "faq-aberta",
+                    item.open
+                );
+
+            }
+        );
+
+    });
+
+});
